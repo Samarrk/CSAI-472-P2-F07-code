@@ -1,0 +1,68 @@
+﻿# Python (backend)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node, React Native, Expo (frontend)
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+.metro-health-check*
+
+# ML and data artifacts (large, linked in README instead)
+weights/
+*.pt
+*.onnx
+*.engine
+*.pth
+runs/
+checkpoints/
+
+# datasets (linked in README)
+data/
+datasets/
+BDD100K/
+bdd100k/
+*.tar
+*.tar.gz
+*.zip
+
+# videos and large media used in tests
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# editors and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# logs and local config
+*.log
+.env
+.env.local
+.env.*.local
