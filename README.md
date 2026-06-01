@@ -6,60 +6,60 @@ The current version focuses on individual licensed drivers by generating a drivi
 
 ## Features
 
-* Real-time dashcam video analysis
-* Unsafe driving event detection
-* Driving score generation
-* Real-time alerts
-* Session summary and history
-* Mobile app connected to the onboard unit
-* Supabase database integration
+- Real-time dashcam video analysis
+- Unsafe driving event detection
+- Driving score generation
+- Real-time alerts
+- Session summary and history
+- Mobile app connected to the onboard unit
+- Supabase database integration
 
 ## Detected Events
 
-* Lane departure
-* Tailgating
-* Red light ahead
-* Ran red light
-* Near-miss situations
-* Speed-limit sign reading
+- Lane departure
+- Tailgating
+- Red light ahead
+- Ran red light
+- Near-miss situations
+- Speed-limit sign reading
 
 ## Models and Components
 
-* YOLOv11s for object detection
-* ByteTrack for object tracking
-* Depth Anything V2 Small for depth estimation
-* UFLD-v2 ResNet-18 for lane detection
-* HSV classifier for traffic-light color detection
-* EasyOCR for speed-limit sign reading
+- YOLOv11s for object detection
+- ByteTrack for object tracking
+- Depth Anything V2 Small for depth estimation
+- UFLD-v2 ResNet-18 for lane detection
+- HSV classifier for traffic-light color detection
+- EasyOCR for speed-limit sign reading
 
 ## Technologies Used
 
-* Python
-* FastAPI
-* WebSocket
-* OpenCV
-* PyTorch
-* TensorRT
-* React Native
-* Expo
-* Supabase
-* NVIDIA Jetson Orin NX
+- Python
+- FastAPI
+- WebSocket
+- OpenCV
+- PyTorch
+- TensorRT
+- React Native
+- Expo
+- Supabase
+- NVIDIA Jetson Orin NX
 
 ## External Repositories and Resources
 
-* YOLO / Ultralytics: https://github.com/ultralytics/ultralytics
-* UFLD-v2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
-* Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
-* EasyOCR: https://github.com/JaidedAI/EasyOCR
-* BDD100K Dataset: http://bdd-data.berkeley.edu/download.html
-* YOLO and ByteTrack Weights: Add Google Drive link here
+- YOLO / Ultralytics: https://github.com/ultralytics/ultralytics
+- UFLD-v2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
+- Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
+- EasyOCR: https://github.com/JaidedAI/EasyOCR
+- BDD100K Dataset: http://bdd-data.berkeley.edu/download.html
+- YOLO and ByteTrack Weights: Add Google Drive link here
 
 ## How to Run
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/tamakkan.git
+git clone https://github.com/Samarrk/CSAI-472-P2-F07-code.git
 cd tamakkan
 ```
 
@@ -78,15 +78,16 @@ git clone https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2.git
 
 Download the required model files:
 
-* Download the YOLOv11s and ByteTrack files from the provided Google Drive link.
-* Download the Depth Anything V2 Small model file.
-* Download the UFLD-v2 ResNet-18 CULane model file.
+- Download the YOLOv11s and ByteTrack files from the provided Google Drive link.
+- Download the Depth Anything V2 Small model file.
+- Download the UFLD-v2 ResNet-18 CULane model file.
 
 Place the downloaded model files according to the paths used in the project code or configuration.
 
 Run the backend server:
 
 ```bash
+cd backend
 uvicorn server.app:app --host 0.0.0.0 --port 8000
 ```
 
@@ -106,17 +107,13 @@ Trainee evaluation, instructor approval, and license-test evaluation are planned
 
 ## Team Members
 
-* Samar Rafat Kintab
-* Lina Mohammad Bader
-* Lamar Bandar Felemban
-* Bashair Fahad Al-Jabri
+- Samar Rafat Kintab
+- Lina Mohammad Bader
+- Lamar Bandar Felemban
+- Bashair Fahad Al-Jabri
 
 Supervised by: Dr. Eiman Talal Al-Harby
 
 ## Project Status
 
 This project is developed as a graduation project for the Bachelor of Science in Artificial Intelligence at Umm Al-Qura University.
-
-
-
-
