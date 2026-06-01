@@ -52,7 +52,7 @@ The current version focuses on individual licensed drivers by generating a drivi
 - Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
 - EasyOCR: https://github.com/JaidedAI/EasyOCR
 - BDD100K Dataset: http://bdd-data.berkeley.edu/download.html
-- YOLO and ByteTrack Weights: Add Google Drive link here
+- YOLO and ByteTrack Weights: https://drive.google.com/drive/folders/1fikAj_fUrT0Siuflq9ashVfZ1Hl30cXC?usp=sharing
 
 ## How to Run
 
