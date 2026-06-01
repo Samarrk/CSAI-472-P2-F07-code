@@ -24,7 +24,7 @@ for _p in (REPO_ROOT / "src", REPO_ROOT / "third_party"):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
-import cv2  # noqa: E402
+import cv2  
 
 WEIGHTS = REPO_ROOT / "weights"
 
