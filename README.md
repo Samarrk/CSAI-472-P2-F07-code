@@ -78,9 +78,9 @@ git clone https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2.git
 
 Download the required model files:
 
-- Download the YOLOv11s and ByteTrack files from the provided Google Drive link.
-- Download the Depth Anything V2 Small model file.
-- Download the UFLD-v2 ResNet-18 CULane model file.
+* Download the YOLOv11s and ByteTrack weights from the provided Google Drive link.
+* Download the Depth Anything V2 Small model file from the Depth Anything V2 repository.
+* Download the UFLD-v2 ResNet-18 CULane model file from the UFLD-v2 repository.
 
 Place the downloaded model files according to the paths used in the project code or configuration.
 
