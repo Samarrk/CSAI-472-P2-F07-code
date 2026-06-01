@@ -18,7 +18,8 @@ The current version focuses on individual licensed drivers by generating a drivi
 
 * Lane departure
 * Tailgating
-* Red-light events
+* Red light ahead
+* Ran red light
 * Near-miss situations
 * Speed-limit sign reading
 
@@ -68,20 +69,20 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
-Clone the external model repositories inside the project folder or inside the `third_party/` folder:
+Clone the external model repositories needed for the pipeline:
 
 ```bash
 git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 git clone https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2.git
 ```
 
-Download the required model weights:
+Download the required model files:
 
-* Download the YOLOv11s and ByteTrack weights from the provided Google Drive link.
-* Download the Depth Anything V2 Small weights.
-* Download the UFLD-v2 ResNet-18 CULane weights.
+* Download the YOLOv11s and ByteTrack files from the provided Google Drive link.
+* Download the Depth Anything V2 Small model file.
+* Download the UFLD-v2 ResNet-18 CULane model file.
 
-Place the downloaded weights in the correct `weights/` folder according to the project structure.
+Place the downloaded model files according to the paths used in the project code or configuration.
 
 Run the backend server:
 
@@ -115,6 +116,7 @@ Supervised by: Dr. Eiman Talal Al-Harby
 ## Project Status
 
 This project is developed as a graduation project for the Bachelor of Science in Artificial Intelligence at Umm Al-Qura University.
+
 
 
 
