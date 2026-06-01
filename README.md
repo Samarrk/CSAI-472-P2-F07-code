@@ -50,7 +50,7 @@ The current version focuses on individual licensed drivers by generating a drivi
 * UFLD-v2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
 * Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
 * EasyOCR: https://github.com/JaidedAI/EasyOCR
-* BDD100K Dataset: Add link here
+* BDD100K Dataset: http://bdd-data.berkeley.edu/download.html
 * YOLO and ByteTrack Weights: Add Google Drive link here
 
 ## How to Run
@@ -62,11 +62,26 @@ git clone https://github.com/your-username/tamakkan.git
 cd tamakkan
 ```
 
-Install the required packages:
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+Clone the external model repositories inside the project folder or inside the `third_party/` folder:
+
+```bash
+git clone https://github.com/DepthAnything/Depth-Anything-V2.git
+git clone https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2.git
+```
+
+Download the required model weights:
+
+* Download the YOLOv11s and ByteTrack weights from the provided Google Drive link.
+* Download the Depth Anything V2 Small weights.
+* Download the UFLD-v2 ResNet-18 CULane weights.
+
+Place the downloaded weights in the correct `weights/` folder according to the project structure.
 
 Run the backend server:
 
@@ -77,7 +92,7 @@ uvicorn server.app:app --host 0.0.0.0 --port 8000
 Run the mobile app:
 
 ```bash
-cd app
+cd frontend
 npm install
 npx expo start
 ```
@@ -100,4 +115,6 @@ Supervised by: Dr. Eiman Talal Al-Harby
 ## Project Status
 
 This project is developed as a graduation project for the Bachelor of Science in Artificial Intelligence at Umm Al-Qura University.
+
+
 
